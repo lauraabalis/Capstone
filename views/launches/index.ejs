@@ -2,9 +2,129 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Title</title>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%# <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"%>
   </head>
   <body>
+
+    <p class="upperRight">User Name</p>
+    <p class="upperRight">user@company.com</p>
+
+    <h1 class="launchPlanTitle"><%= title %></h1>
+
+    <%# Beginning of timeline%>
+
+    <div class="Timeline">
+
+      <svg height="5" width="200">
+        <line x1="0" y1="0" x2="200" y2="0" style="stroke:#004165;stroke-width:5" />
+        Sorry. Your browser does not support inline SVG.
+      </svg>
+
+      <div class="event1">
+
+        <div class="event1Bubble">
+          <div class="eventTime">
+            <div class="DayDigit">02</div>
+            <div class="Day">
+               Wednesday
+              <div class="MonthYear">february 2016</div>
+            </div>
+          </div>
+          <div class="eventTitle">Profile Created</div>
+        </div>
+        <div class="eventAuthor">by Youri Nelson</div>
+        <svg height="20" width="20">
+           <circle cx="10" cy="11" r="5" fill="#004165" />
+         </svg>
+        <div class="time">9 : 27 AM</div>
+
+      </div>
+
+      <svg height="5" width="300">
+        <line x1="0" y1="0" x2="300" y2="0" style="stroke:#004165;stroke-width:5" />
+        Sorry. Your browser does not support inline SVG.
+      </svg>
+
+      <div class="event2">
+
+        <div class="event2Bubble">
+          <div class="eventTime">
+            <div class="DayDigit">17</div>
+            <div class="Day">
+               Thursday
+              <div class="MonthYear">April 2016</div>
+            </div>
+          </div>
+          <div class="eventTitle">Phone Interview</div>
+        </div>
+        <div class="event2Author">by Tom Eggleston</div>
+          <svg height="20" width="20">
+        <circle cx="10" cy="11" r="5" fill="#004165" />
+        </svg>
+        <div class="time2">1 : 32 PM</div>
+      </div>
+
+      <svg height="5" width="50">
+        <line x1="0" y1="0" x2="50" y2="0" style="stroke:#004165;stroke-width:5" />
+        Sorry. Your browser does not support inline SVG.
+      </svg>
+
+      <div class="now">
+        NOW
+      </div>
+
+      <svg height="5" width="150">
+        <line x1="0" y1="0" x2="150" y2="0" style="stroke:rgba(162, 164, 163, 0.37);stroke-width:5" />
+        Sorry. Your browser does not support inline SVG.
+      </svg>
+
+      <div class="event3 futureGray ">
+        <div class="event1Bubble futureOpacity">
+          <div class="eventTime">
+            <div class="DayDigit">05</div>
+            <div class="Day">
+               Tuesday
+              <div class="MonthYear">May 2016</div>
+            </div>
+          </div>
+          <div class="eventTitle">Anticipated Hire</div>
+        </div>
+          <svg height="20" width="20">
+            <circle cx="10" cy="11" r="5" fill="rgba(162, 164, 163, 0.37)" />
+          </svg>
+      </div>
+    <svg height="5" width="50">
+      <line x1="0" y1="0" x2="50" y2="0" style="stroke:#004165;stroke-width:5" />
+    </svg>
+    <svg height="20" width="42">
+      <line x1="1" y1="0" x2="1" y2="20" style="stroke:#004165;stroke-width:2" />
+      <circle cx="11" cy="10" r="3" fill="#004165" />
+      <circle cx="21" cy="10" r="3" fill="#004165" />
+      <circle cx="31" cy="10" r="3" fill="#004165" />
+      <line x1="41" y1="0" x2="41" y2="20" style="stroke:#004165;stroke-width:2" />
+    </svg>
+
+    </div>
+
+    <%# End of timeline%>
+
+    <%# <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+    <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+
+    <script type="text/javascript">
+      // The TL.Timeline constructor takes at least two arguments:
+      // the id of the Timeline container (no '#'), and
+      // the URL to your JSON data file or Google spreadsheet.
+      // the id must refer to an element "above" this code,
+      // and the element must have CSS styling to give it width and height
+      // optionally, a third argument with configuration options can be passed.
+      // See below for more about options.
+      timeline = new TL.Timeline('timeline-embed',
+        'https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml');
+    </script>%>
 
   </body>
 </html>

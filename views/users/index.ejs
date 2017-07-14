@@ -2,9 +2,89 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Title</title>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+
+    <p class="upperRight">User Name</p>
+    <p class="upperRight">user@company.com</p>
+
+    <h1 class="companyName"><%= title %></h1>
+
+    <hr class="hrTop">
+
+    <button class="plusBtn" type="button" name="button">
+      <img class="plusIcon" src="images/plusIcon.png" alt="Plus sign">
+    </button>
+
+    <a href="/launches">
+      <button class="launchBtn launch1" type="button" name="button">
+        Launch Plan 1
+      </button>
+    </a>
+
+    <a href="/launches">
+      <button class="launchBtn launch2" type="button" name="button">
+        Launch Plan 2
+      </button>
+    </a>
+
+    <a href="/launches">
+      <button class="launchBtn launch3" type="button" name="button">
+        Launch Plan 3
+      </button>
+    </a>
+
+    <a href="/launches">
+      <button class="launchBtn launch4" type="button" name="button">
+        Launch Plan 4
+      </button>
+    </a>
+
+    <hr class="hrBottom">
+
+    <p class="userHeading">Users</p>
+
+    <div class="userTableDiv">
+      <table class="userTable">
+        <tr class="tableHeader">
+          <td></td>
+          <td>First Name</td>
+          <td>Last Name</td>
+          <td>Email</td>
+          <td>Mobile</td>
+          <td>Role</td>
+        </tr>
+        <tr class="tableContent">
+          <td>Add | Edit | Delete</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="roleTableDiv">
+      <table class="roleTable">
+        <tr class="tableHeader">
+          <td>Roles</td>
+        </tr>
+        <tr class="tableContent">
+          <td>Company Admin(s)</td>
+        </tr>
+        <tr class="tableContent">
+          <td>User(s)</td>
+        </tr>
+        <tr class="tableContent">
+          <td>Viewer(s)</td>
+        </tr>
+      </table>
+    </div>
+
+
 
   </body>
 </html>
