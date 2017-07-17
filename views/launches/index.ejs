@@ -3,128 +3,133 @@
   <head>
     <meta charset="utf-8">
     <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <%# <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"%>
+    <link rel="stylesheet" href="/stylesheets/newTimeline.css">
+
   </head>
   <body>
 
-    <p class="upperRight">User Name</p>
-    <p class="upperRight">user@company.com</p>
+    <div class="container-fluid">
 
-    <h1 class="launchPlanTitle"><%= title %></h1>
+    <div>
 
-    <%# Beginning of timeline%>
+      <p class="upperRight">User Name</p>
+      <p class="upperRight">user@company.com</p>
 
-    <div class="Timeline">
+      <h1 class="launchPlanTitle"><%= title %></h1>
 
-      <svg height="5" width="200">
-        <line x1="0" y1="0" x2="200" y2="0" style="stroke:#004165;stroke-width:5" />
-        Sorry. Your browser does not support inline SVG.
-      </svg>
+      <div class="row">
+          <ul class="timeline" id="timeline">
+            <li class="li complete">
+              <div class="timestamp">
+                <span class="date">1 June<span>
+              </div>
+              <div class="status">
+                <p>Test</p>
+              </div>
+            </li>
 
-      <div class="event1">
+            <li class="li complete">
+              <div class="timestamp">
+                <span class="date">1 July<span>
+              </div>
+              <div class="status">
+                <p>Test</p>
+              </div>
+            </li>
 
-        <div class="event1Bubble">
-          <div class="eventTime">
-            <div class="DayDigit">02</div>
-            <div class="Day">
-               Wednesday
-              <div class="MonthYear">february 2016</div>
-            </div>
+            <li class="li complete">
+              <div class="timestamp">
+                <span class="date">1 August<span>
+              </div>
+              <div class="status">
+                <p>Test</p>
+              </div>
+            </li>
+
+            <li class="li">
+              <div class="timestamp">
+                <span class="date">1 September<span>
+              </div>
+              <div class="status">
+                <p>Test</p>
+              </div>
+            </li>
+
+            <li class="li">
+              <div class="timestamp">
+                <span class="date">1 October<span>
+              </div>
+              <div class="status">
+                <p>Test</p>
+              </div>
+            </li>
+
+            <li class="li">
+              <div class="timestamp">
+                <span class="date">1 November<span>
+              </div>
+              <div class="status">
+                <p>Test</p>
+              </div>
+            </li>
+
+            <li class="li">
+              <div class="timestamp">
+                <span class="date">1 December<span>
+              </div>
+              <div class="status">
+                <p>Test</p>
+              </div>
+            </li>
+           </ul>
+      </div>
+
+      <div class="row upcomingTaskTableRow">
+          <div class="upcomingTaskTableDiv">
+            <table class="upcomingTaskTable">
+              <tr class="upcomingTaskTableHeader">
+                <td class="upcomingTaskCell">
+                  <p>Upcoming Tasks</p>
+                  <img class="downArrowIcon" src="images/downArrow.png" alt="Down Arrow">
+                  <span>Next 7 Days</span>
+                </td>
+              </tr>
+              <tr class="upcomingTaskTableContent">
+                <td class="upcomingTaskCell">1</td>
+              </tr>
+              <tr class="upcomingTaskTableContent">
+                <td class="upcomingTaskCell">2</td>
+              </tr>
+              <tr class="upcomingTaskTableContent">
+                <td class="upcomingTaskCell">3</td>
+              </tr>
+              <tr class="upcomingTaskTableContent">
+                <td class="upcomingTaskCell">4</td>
+              </tr>
+              <tr class="upcomingTaskTableContent">
+                <td class="upcomingTaskCell">5</td>
+              </tr>
+              <tr class="upcomingTaskTableContent">
+                <td class="upcomingTaskCell">6</td>
+              </tr>
+              <tr class="upcomingTaskTableContent">
+                <td class="upcomingTaskCell">7</td>
+              </tr>
+            </table>
           </div>
-          <div class="eventTitle">Profile Created</div>
         </div>
-        <div class="eventAuthor">by Youri Nelson</div>
-        <svg height="20" width="20">
-           <circle cx="10" cy="11" r="5" fill="#004165" />
-         </svg>
-        <div class="time">9 : 27 AM</div>
-
-      </div>
-
-      <svg height="5" width="300">
-        <line x1="0" y1="0" x2="300" y2="0" style="stroke:#004165;stroke-width:5" />
-        Sorry. Your browser does not support inline SVG.
-      </svg>
-
-      <div class="event2">
-
-        <div class="event2Bubble">
-          <div class="eventTime">
-            <div class="DayDigit">17</div>
-            <div class="Day">
-               Thursday
-              <div class="MonthYear">April 2016</div>
-            </div>
-          </div>
-          <div class="eventTitle">Phone Interview</div>
-        </div>
-        <div class="event2Author">by Tom Eggleston</div>
-          <svg height="20" width="20">
-        <circle cx="10" cy="11" r="5" fill="#004165" />
-        </svg>
-        <div class="time2">1 : 32 PM</div>
-      </div>
-
-      <svg height="5" width="50">
-        <line x1="0" y1="0" x2="50" y2="0" style="stroke:#004165;stroke-width:5" />
-        Sorry. Your browser does not support inline SVG.
-      </svg>
-
-      <div class="now">
-        NOW
-      </div>
-
-      <svg height="5" width="150">
-        <line x1="0" y1="0" x2="150" y2="0" style="stroke:rgba(162, 164, 163, 0.37);stroke-width:5" />
-        Sorry. Your browser does not support inline SVG.
-      </svg>
-
-      <div class="event3 futureGray ">
-        <div class="event1Bubble futureOpacity">
-          <div class="eventTime">
-            <div class="DayDigit">05</div>
-            <div class="Day">
-               Tuesday
-              <div class="MonthYear">May 2016</div>
-            </div>
-          </div>
-          <div class="eventTitle">Anticipated Hire</div>
-        </div>
-          <svg height="20" width="20">
-            <circle cx="10" cy="11" r="5" fill="rgba(162, 164, 163, 0.37)" />
-          </svg>
-      </div>
-    <svg height="5" width="50">
-      <line x1="0" y1="0" x2="50" y2="0" style="stroke:#004165;stroke-width:5" />
-    </svg>
-    <svg height="20" width="42">
-      <line x1="1" y1="0" x2="1" y2="20" style="stroke:#004165;stroke-width:2" />
-      <circle cx="11" cy="10" r="3" fill="#004165" />
-      <circle cx="21" cy="10" r="3" fill="#004165" />
-      <circle cx="31" cy="10" r="3" fill="#004165" />
-      <line x1="41" y1="0" x2="41" y2="20" style="stroke:#004165;stroke-width:2" />
-    </svg>
 
     </div>
 
-    <%# End of timeline%>
-
-    <%# <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
-
-    <div id='timeline-embed' style="width: 100%; height: 600px"></div>
-
-    <script type="text/javascript">
-      // The TL.Timeline constructor takes at least two arguments:
-      // the id of the Timeline container (no '#'), and
-      // the URL to your JSON data file or Google spreadsheet.
-      // the id must refer to an element "above" this code,
-      // and the element must have CSS styling to give it width and height
-      // optionally, a third argument with configuration options can be passed.
-      // See below for more about options.
-      timeline = new TL.Timeline('timeline-embed',
-        'https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml');
-    </script>%>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
   </body>
 </html>
