@@ -228,10 +228,11 @@ a {
 
 .launchPlanTitle {
   position: relative;
+  top: -95px;
   text-align: left;
   font-size: 38px;
   font-weight: normal;
-  padding-top: 10px;
+  padding-top: 90px;
 }
 
 /*Timeline styling begins*/
@@ -242,132 +243,60 @@ a {
   align-items: center;
   justify-content: center;
   background-color: white;/*background*/
-  color: grey;/*all text*/
-  height: 150px;
+  color: black;/*all text*/
+  height: 175px;
   margin-bottom: 20px;
   position: relative;
-  width: 100%;
-  padding: 0;
-  /*margin-top: 5px;*/
-}
+  top: -75px;
+  width: 100%;}
 
-.timeline_header{
-  background-color: #44546A;
-  height: 60px; width: 100%;
-  color: white;
-  font-size: 20px;
-  font-weight: 900;
-  font-family: Arial;
-  text-align:left;
-  padding-left: 20px;
-  position: relative;
-}
-
-.timeline_header section{
-  margin: 20px 0px 0px 15px;
-  float:left;
-}
-
-.timeline_header div{
-  font-size: 8px;
-  color:orange;
-}
-
-.timeline_header button{
-  width: 45px;
-  height: 45px;
-  border-radius: 6px;
-  background-color: #51B11D;
-  color:white;
-  float: right;
-  border: none;
-  margin: 10px 20px 2px 0px;
-
-}
-
-.timeline_footer {
-    position: absolute;
-    color: chocolate;
-    font-weight: 600;
-    font-size: 16px;
-    top: 280px;
-    left: 20px;
-}
-
-/*.li {
+.li {
   transition: all 200ms ease-in;
-}*/
+}
 
-.statusi {
+.timestamp {
   margin-bottom: 20px;
+  padding: 0px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-weight: 100;
 }
 
-.statusi p{
-  color: orange;
-  position: absolute;
-  top: 30px;
-  text-transform: capitalize;
-  font-size: 10px;
-  width: 100px;
-}
-
-span.date{
-  position: relative;
-  top: 20px;
-}
-
-/*span.date::before{
-      content: '';
-      width: 1px;
-      height: 25px;
-      border: 1px solid black;
-      position: absolute;
-      top: -100px;
-      left: 45px;
-}*/
-
-.timestampi {
+.status {
   padding: 0px 40px;
   display: flex;
   justify-content: center;
-  border-top: 1px solid grey;/*line 4th & fwd*/
+  border-top: 2px solid black;/*line Sept & fwd*/
   position: relative;
-  /*transition: all 200ms ease-in;*/
+  transition: all 200ms ease-in;
 }
-
-.timestampi h4 {
+.status h4 {
   font-weight: 600;
 }
-
-.timestampi:before {
+.status:before {
   content: '';
-  width: 15px;
-  height: 15px;
-  background-color: #4472C4;/*background of circles 4th & fwd*/
+  width: 25px;
+  height: 25px;
+  background-color: white;/*background of circles Sept & fwd*/
   border-radius: 25px;
-  /*border: 1px solid black;/*border of circles 4th & fwd*/
+  border: 1px solid black;/*border of circles Sept & fwd*/
   position: absolute;
-  top: -10px;
+  top: -15px;
   left: 42%;
-  /*transition: all 200ms ease-in;*/
+  transition: all 200ms ease-in;
 }
 
-/*.li.complete .timestampi {
-  border-top: 2px solid black;}/*line 1st-3rd*/
-
-
-/*.li.complete .statusi:before {
-  background-color: white;/*background of circles 1st-3rd*/
-  /*border: 1px solid black;/*border of circles 1st-3rd*/
-  /*transition: all 200ms ease-in;*/
+.li.complete .status {
+  border-top: 2px solid black;/*line Jun-Aug*/
 }
-
-.li.complete .timestampi h4 {
-  color: grey;
+.li.complete .status:before {
+  background-color: white;/*background of circles Jun-Aug*/
+  border: 1px solid black;/*border of circles Jun-Aug*/
+  transition: all 200ms ease-in;
+}
+.li.complete .status h4 {
+  color: black;
 }
 
 @media (min-device-width: 320px) and (max-device-width: 700px) {
@@ -376,20 +305,20 @@ span.date{
     display: block;
   }
 
-  .li.complete {
-    /*transition: all 200ms ease-in;*/
+  .li {
+    transition: all 200ms ease-in;
     display: flex;
     width: inherit;
   }
 
-  .statusi {
+  .timestamp {
     width: 100px;
   }
 
-  .statusi:before {
+  .status:before {
     left: -8%;
     top: 30%;
-    /*transition: all 200ms ease-in;*/
+    transition: all 200ms ease-in;
   }
 }
 
@@ -405,42 +334,17 @@ span.date{
   background-color: #7D7D7D;
 }
 
-.downArrowIcon {
-  height: 18px;
-  width: 18px;
-  margin-left: 110px;
-}
-
-.upcomingTasksP {
+.upcomingTaskTableHeader p {
   background-color: #7D7D7D;
   font-size: 20px;
-  text-align: left;
-  margin: 5px 3px 0 4px;
-}
-
-
-
-.upcomingTaskCellHeader {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: left;
-  position: relative;
-  left: 5px;
-  border: 1px solid black;
+  float: left;
+  margin-bottom: 0;
+  margin-left: 4px;
+  margin-top: 5px;
 }
 
 .upcomingTaskCell {
   border: 1px solid black;
-}
-
-.upcomingTaskCell p {
-  text-align: left;
-  position: relative;
-  left: 25px;
-}
-
-p.head {
-  left: 0px;
 }
 
 .upcomingTaskCell span {
@@ -448,37 +352,8 @@ p.head {
   font-size: 12px;
 }
 
-.upcomingTaskCellBlank {
-  height: 14px;
-  background-color: #6A6A6A;
-}
-
-.upcomingTaskCircleGreen {
-  border: 1px solid black;
-  background-color: green;
-  padding: 7px 8px;
-  border-radius: 100%;
-  margin-left: 5px;;
-  margin-top: 1px;
-  position: absolute;
-}
-
-.upcomingTaskCircleYellow {
-  border: 1px solid black;
-  background-color: yellow;
-  padding: 7px 8px;
-  border-radius: 100%;
-  margin-left: 5px;;
-  margin-top: 1px;
-  position: absolute;
-}
-
-.upcomingTaskCircleRed {
-  border: 1px solid black;
-  background-color: red;
-  padding: 7px 8px;
-  border-radius: 100%;
-  margin-left: 5px;;
-  margin-top: 1px;
-  position: absolute;
+.downArrowIcon {
+  height: 18px;
+  width: 18px;
+  margin-left: 110px;
 }

@@ -7,7 +7,9 @@ exports.seed = function(knex, Promise) {
       return knex('launch').insert([
         {title: 'rowValue1'},
         {description: 'rowValue2'},
-        {project: 'rowValue3'}
+        {project: 'rowValue3'},
+        {date: 'rowValue4'},
+        {status: 'rowValue5'}
       ]);
     });
 };

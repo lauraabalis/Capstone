@@ -5,6 +5,8 @@ exports.up = function(knex, Promise) {
     table.string('title');
     table.string('description');
     table.string('project');
+    table.string('date');
+    table.string('status');
   });
 };
 

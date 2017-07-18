@@ -9,7 +9,6 @@
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="stylesheet" href="/stylesheets/newTimeline.css">
 
   </head>
   <body>
@@ -24,103 +23,81 @@
       <h1 class="launchPlanTitle"><%= title %></h1>
 
       <div class="row">
+        <div class="timeline_header">
+          <section>
+            <div>ZenLeap</div>
+            TIMELINE
+          </section>
+          <button class="score">8.4</button>
+        </div>
+
           <ul class="timeline" id="timeline">
-            <li class="li complete">
-              <div class="timestamp">
-                <span class="date">1 June<span>
-              </div>
-              <div class="status">
-                <p>Test</p>
-              </div>
-            </li>
-
-            <li class="li complete">
-              <div class="timestamp">
-                <span class="date">1 July<span>
-              </div>
-              <div class="status">
-                <p>Test</p>
-              </div>
-            </li>
-
-            <li class="li complete">
-              <div class="timestamp">
-                <span class="date">1 August<span>
-              </div>
-              <div class="status">
-                <p>Test</p>
-              </div>
-            </li>
-
-            <li class="li">
-              <div class="timestamp">
-                <span class="date">1 September<span>
-              </div>
-              <div class="status">
-                <p>Test</p>
-              </div>
-            </li>
-
-            <li class="li">
-              <div class="timestamp">
-                <span class="date">1 October<span>
-              </div>
-              <div class="status">
-                <p>Test</p>
-              </div>
-            </li>
-
-            <li class="li">
-              <div class="timestamp">
-                <span class="date">1 November<span>
-              </div>
-              <div class="status">
-                <p>Test</p>
-              </div>
-            </li>
-
-            <li class="li">
-              <div class="timestamp">
-                <span class="date">1 December<span>
-              </div>
-              <div class="status">
-                <p>Test</p>
-              </div>
-            </li>
+             <% for (thing in collection) { %>
+                 <li class="li complete">
+                   <div class="statusi">
+                     <p class="inner_status"><%= collection[thing].status %></p>
+                   </div>
+                   <div class="timestampi">
+                     <span class="date"> <%= collection[thing].date %> <span>
+                   </div>
+                 </li>
+             <% } %>
            </ul>
+        <div class="timeline_footer">Marketing</div>
       </div>
 
       <div class="row upcomingTaskTableRow">
           <div class="upcomingTaskTableDiv">
             <table class="upcomingTaskTable">
+
               <tr class="upcomingTaskTableHeader">
                 <td class="upcomingTaskCell">
-                  <p>Upcoming Tasks</p>
+                  <p class="upcomingTasksP head">Upcoming Tasks</p>
                   <img class="downArrowIcon" src="images/downArrow.png" alt="Down Arrow">
                   <span>Next 7 Days</span>
                 </td>
               </tr>
-              <tr class="upcomingTaskTableContent">
-                <td class="upcomingTaskCell">1</td>
+
+              <tr class="upcomingTaskTableContentHeader">
+                <td class="upcomingTaskCellHeader">Marketing</td>
               </tr>
+
               <tr class="upcomingTaskTableContent">
-                <td class="upcomingTaskCell">2</td>
+                  <td class="upcomingTaskCell">
+                    <div class="upcomingTaskCircleGreen"></div>
+                    <p>Define Launch Team</p>
+                  </td>
               </tr>
+
               <tr class="upcomingTaskTableContent">
-                <td class="upcomingTaskCell">3</td>
+                <td class="upcomingTaskCellBlank"></td>
               </tr>
+
+              <tr class="upcomingTaskTableContentHeader">
+                <td class="upcomingTaskCellHeader">Product</td>
+              </tr>
+
               <tr class="upcomingTaskTableContent">
-                <td class="upcomingTaskCell">4</td>
+                <td class="upcomingTaskCell">
+                  <div class="upcomingTaskCircleGreen"></div>
+                  <p>Wireframes</p>
+                </td>
               </tr>
+
               <tr class="upcomingTaskTableContent">
-                <td class="upcomingTaskCell">5</td>
+                <td class="upcomingTaskCell">
+                  <div class="upcomingTaskCircleYellow"></div>
+                  <p>Creative</p>
+                </td>
               </tr>
+
               <tr class="upcomingTaskTableContent">
-                <td class="upcomingTaskCell">6</td>
+                <td class="upcomingTaskCell">
+                  <div class="upcomingTaskCircleRed"></div>
+                  <p>POC</p>
+                </td>
               </tr>
-              <tr class="upcomingTaskTableContent">
-                <td class="upcomingTaskCell">7</td>
-              </tr>
+
             </table>
           </div>
         </div>
