@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link rel='stylesheet' href='/stylesheets/style.css' />
 
@@ -23,11 +23,14 @@
       <h1 class="launchPlanTitle"><%= title %></h1>
 
       <div class="row">
+        <div class="col">
+
         <div class="timeline_header">
           <section>
             <div>ZenLeap</div>
             TIMELINE
           </section>
+
           <button class="score">8.4</button>
         </div>
 
@@ -43,13 +46,17 @@
                  </li>
              <% } %>
            </ul>
-        <div class="timeline_footer">Marketing</div>
+
+         <div class="timeline_footer">Marketing</div>
+
+        </div>
       </div>
 
       <div class="row upcomingTaskTableRow">
+        <div class="col col-md-3">
+
           <div class="upcomingTaskTableDiv">
             <table class="upcomingTaskTable">
-
               <tr class="upcomingTaskTableHeader">
                 <td class="upcomingTaskCell">
                   <p class="upcomingTasksP head">Upcoming Tasks</p>
@@ -97,10 +104,62 @@
                   <p>POC</p>
                 </td>
               </tr>
-
             </table>
           </div>
         </div>
+
+        <div class="col col-md-6">
+          <div class="row">
+            <div class="col-md-12 projectPlans">
+                <div class="projectPlansHeader">
+                   Project Plans
+                   <button class="addProjectPlusBtn" type="button" name="button">
+                     <img class="plusIcon_v2" src="images/plusIcon_v2.png" alt="Plus sign">
+                   </button>
+                </div>
+                <div class="projectPlansBody">
+                  <div class="progress1">
+                    <div class="progress-bar clear" style="width: 75%; margin-left: 10%;"></div>
+                    <div class="progress-bar clear" style="width: 75%; margin-left: 0%;"><span>25 Marketing</span></div>
+                    <div class="progress-bar progressGreen" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">20</div>
+                    <div class="progress-bar progressYellow" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">3</div>
+                    <div class="progress-bar progressRed" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100">2</div>
+                  </div>
+
+                  <div class="progress2">
+                    <div class="progress-bar clear" style="width: 75%; margin-left: 10%;"></div>
+                    <div class="progress-bar clear" style="width: 75%; margin-left: 0%;"><span>23 Product &amp; Engineering</span></div>                 <div class="progress-bar progressGreen" role="progressbar" style="width: 65.217%" aria-valuenow="65.217" aria-valuemin="0" aria-valuemax="100">15</div>
+                    <div class="progress-bar progressYellow" role="progressbar" style="width: 13.043%" aria-valuenow="13.043" aria-valuemin="0" aria-valuemax="100">3</div>
+                    <div class="progress-bar progressRed" role="progressbar" style="width: 21.739%" aria-valuenow="21.739" aria-valuemin="0" aria-valuemax="100">8</div>
+                  </div>
+
+                  <div class="progress3">
+                    <div class="progress-bar clear" style="width: 75%; margin-left: 10%;"></div>
+                    <div class="progress-bar clear" style="width: 75%; margin-left: 0%;"><span>13 Operations</span></div>
+                    <div class="progress-bar progressGreen" role="progressbar" style="width: 76.923%" aria-valuenow="76.923" aria-valuemin="0" aria-valuemax="100">10</div>
+                    <div class="progress-bar progressYellow" role="progressbar" style="width: 15.385%" aria-valuenow="15.385" aria-valuemin="0" aria-valuemax="100">2</div>
+                    <div class="progress-bar progressRed" role="progressbar" style="width: 7.692%" aria-valuenow="7.692" aria-valuemin="0" aria-valuemax="100">1</div>
+                    <div class="progress-bar clear" style="width: 10%; margin-left: 10%;"></div>
+                  </div>
+                </div>
+                <div class="projectPlansFooter">
+                  <div class="projectPlansCircleGreen">OK</div>
+                  <div class="projectPlansCircleYellow">Warning</div>
+                  <div class="projectPlansCircleRed">Critical</div>
+                </div>
+           </div>
+          </div>
+        </div>
+
+        <div class="col col-md-3">
+          <table>
+            <tr>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
 
     </div>
 
